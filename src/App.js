@@ -10,9 +10,9 @@ class App extends Component {
     super();
     this.state = {
       courses: [
-        { color: "#323299", title: "Finance 261"},
-        { color: "#85ba84", title: "Comlaw 329"},
-        { color: "#f4e730", title: "Dance 101"}
+        { color: "#fff0ff", title: "Finance 261"},
+        { color: "#f0ffff", title: "Comlaw 329"},
+        { color: "#ffffcc", title: "Dance 101"}
         ],
       visible: false
   }
