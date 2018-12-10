@@ -1,6 +1,7 @@
 {
   "name": "canvas-app",
-  "homepage": "https://LaurieTews.github.io/canvasClone",
+  "homepage": "http://LaurieTews.github.io/canvasClone",
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
