@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Select from 'react-select';
 
-let colors = ['#EFD4F7', '#8601AF', '#FB9902', '#66B032', '#342309', '#888177', '#E8E1EA'];
+const colors = ['#EFD4F7', '#8601AF', '#FB9902', '#66B032', '#342309', '#888177', '#E8E1EA'];
+const options =['BUSINESS 101', 'ARCHEOLOGY 302','MATHS 107','PHYSIOTHERAPY 131', 'BIOMED 280', 'MAORI 340', 'STATISTICS 281'];
 
 class AddCourse extends Component {
   constructor(){

@@ -5,9 +5,9 @@ import Courses from './Components/Courses';
 import AddCourse from './Components/AddCourse';
 import './App.css';
 
-class App extends Component {
-  constructor(){
-    super();
+export default class App extends Component {
+  constructor(props){
+    super(props);
     this.state = {
       courses: [
         { color: "#fff0ff", title: "Finance 261"},
@@ -22,8 +22,8 @@ class App extends Component {
     let courses = this.state.courses;
     courses.push(course);
     this.setState({courses:courses});
-    console.log("course: " + this.state.courses.title);
   }
+
   handleDeleteCourse(title){
     let courses = this.state.courses;
     let index = courses.findIndex( x=> x.title === title);
@@ -54,5 +54,4 @@ class App extends Component {
     );
   }
 }
-
-export default App; 
+ 
