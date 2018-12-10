@@ -114,18 +114,16 @@ h2 {
   width: 60px;
   height: 30px;
   background: #e6e9ef;
-  border: 1px solid lightgray;
   border-radius: 5px;
-  position: relative;
-  bottom: 2px;
   z-index: -1;
 }
+
 .btn:active {
   outline: none;
-  border: 1px solid gray;
 }
 .btn:hover {
   border: 1px solid gray;
+    cursor: pointer;
 }
 .btn:focus {
   outline: none;
@@ -141,6 +139,9 @@ h2 {
   background-color: #fff;
   margin: 20px 20px 20px 20px;
   box-shadow: 3px 3px 3px #888888;
+}
+.course-container:hover  {
+  box-shadow: 5px 5px 5px #888888;
 }
 
 .course-header {
