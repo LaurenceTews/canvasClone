@@ -11,7 +11,7 @@ class CourseItem extends Component {
 
   render () {
     var courseStyle = {
-      backgroundColor: this.props.course.color
+      backgroundColor: this.props.course.colour
     }
     return(
         <div className="course-container" >

@@ -9,7 +9,6 @@ import info from '../assets/information.png';
 import calendar from '../assets/calen.png';
 import coursesPop from '../assets/coursesPop.png';
 import helpPop from '../assets/helpPop.png';
-import inboxPop from '../assets/inboxPop.png';
 import calendarPop from '../assets/calendarPop.png';
 import groupsPop from '../assets/groupsPop.png';
 import accountPop from '../assets/accountPop.png';
@@ -31,7 +30,7 @@ class Navbar extends Component {
 
   _menuToggle(e) {
     e.stopPropagation();
-    if(this.state.slideState == "profile" && this.state.open) {
+    if(this.state.slideState === "profile" && this.state.open) {
       this.setState({
         slideState: this.state.slideState,
         open: false

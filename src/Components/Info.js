@@ -6,7 +6,7 @@ const Info = props => {
 
             <div className="infoPanel">
                   <h3>Help</h3>
-                  <hr />
+                  <hr className="horizontal spaced" />
                   <div className="item-blk">
                         <div><a href="#">Ask Your Instructor a Question</a></div>
                         <p>Quesetions are submitted to your instructor</p>

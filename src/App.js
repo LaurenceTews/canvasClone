@@ -10,9 +10,9 @@ export default class App extends Component {
     super(props);
     this.state = {
       courses: [
-        { color: "#fff0ff", title: "Finance 261"},
-        { color: "#f0ffff", title: "Comlaw 329"},
-        { color: "#ffffcc", title: "Dance 101"}
+        { colour: "#fff0ff", title: "Finance 261"},
+        { colour: "#f0ffff", title: "Comlaw 329"},
+        { colour: "#ffffcc", title: "Dance 101"}
         ],
       visible: false
   }

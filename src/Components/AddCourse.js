@@ -1,49 +1,82 @@
 import React, { Component } from 'react';
 import Select from 'react-select';
 
-const colors = ['#EFD4F7', '#8601AF', '#FB9902', '#66B032', '#342309', '#888177', '#E8E1EA'];
-const options =['BUSINESS 101', 'ARCHEOLOGY 302','MATHS 107','PHYSIOTHERAPY 131', 'BIOMED 280', 'MAORI 340', 'STATISTICS 281'];
+const colours = ['#EFD4F7', '#8601AF', '#FB9902', '#66B032', '#342309', '#888177', '#E8E1EA'];
 
-class AddCourse extends Component {
-  constructor(){
-    super();
+let options =[
+  {value: 'BUSINESS 101', label: 'BUSINESS 101'},
+  {value: 'ARCHEOLOGY 302', label: 'ARCHEOLOGY 302'},
+  {value: 'MATHS 107', label: 'MATHS 107'},
+  {value: 'PHYSIOTHERAPY 131', label: 'PHYSIOTHERAPY 131'},
+  {value: 'BIOMED 280', label: 'BIOMED 280'},
+  {value: 'MAORI 340', label: 'MAORI 340'},
+  {value: 'STATISTICS 281', label: 'STATISTICS 281'}
+];
+
+export default class AddCourse extends Component {
+  constructor(props){
+    super(props);
+    this.handleChange = this.handleChange.bind(this)
+    
     this.state = {
-      newCourse:{}
+      newCourse:{},
+      selectedOption: null,
     }
   }
 
   static defaultProps = {}
+
   handleSubmit(e){
-    if(colors.length === 1) {
+
+    if(colours.length === 0 || options.length === 0) {
       alert("cannot add any more courses");
     }
-    else if(this.refs.title.value === ''){
-      alert("Name is required");
-    } else {
-      // new section ------
-      let point = Math.floor((Math.random() * colors.length));
-      let index = colors[point];
 
-      colors.splice(point, 1);
-    // new section ------
+    else {
+      let point = Math.floor((Math.random() * colours.length));
+      let index = colours[point];
+
+      colours.splice(point, 1);
       this.setState({newCourse:{
-        title: this.refs.title.value,
-        color: index
+        colour: index,
+        title: this.state.selectedOption.value
       }}, function(){
         this.props.addCourse(this.state.newCourse);
       });
     }
+
     e.preventDefault();
-    document.getElementsByClassName("course-input")[0].value=null;
+    options = options.filter(options => options.value !== this.state.selectedOption.value);
+    // this.resetState(); - wrap this in a promise
+  }
+
+  resetState() {
+    this.setState({
+      newCourse:{},
+      selectedOption: null,
+    })
+  }
+
+  handleChange = (selectedOption) => {
+      this.setState({ 
+        newCourse: this.state.newCourse,
+        selectedOption: selectedOption
+       });
   }
 
   render() {
+    const { selectedOption } = this.state;
     return(
       <div>
         <form onSubmit={this.handleSubmit.bind(this)}>
           <label>
             Add a Course:
-            <input className="course-input" type="text" ref="title"/>
+            <Select
+                value={selectedOption}
+                onChange={this.handleChange}
+                options={options}
+                className="searchbar-std"
+            />
           </label>
           <input type="submit" value="Submit" className="btn"/>
         </form>
@@ -51,5 +84,3 @@ class AddCourse extends Component {
     );
   }
 }
-
-export default AddCourse;

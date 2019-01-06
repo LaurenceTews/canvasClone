@@ -39,7 +39,7 @@ hr {
   background-color: lightgray;
   width: 60px;
   height: 100vh;
-  background-color: #06477a;
+  background-color: #8C4843;
 }
 ul.nav-container {
   padding-left: 0px;
@@ -83,7 +83,7 @@ ul.nav-container {
 
 .main-container {
   min-height: 100vh;
-  margin-left: 60px;
+  margin-left: 80px;
   padding-left: 20px;
 }
 
@@ -96,6 +96,7 @@ h4 {
 
 h3 {
   padding: 20px 0 20px 0;
+  color: #8C4843;
 }
 
 h2 {
@@ -174,8 +175,12 @@ h2 {
   margin-left: 0;
   border: none;
   border-top: 1px solid lightgray;
-
 }
+
+.horizontal.spaced {
+  margin-bottom: 20px;
+}
+
 .icon-small {
   width: 30px;
   margin: 0 40px 0 0;
@@ -185,15 +190,21 @@ h2 {
   padding-top: 10px;
   text-decoration: none;
   display: block;
-  color: white;
+  color: darkgray;
   font-size: 20px;
+}
+
+/* Searchbar ******** */
+.searchbar-std {
+  font-size: 14px;
+  width: 300px;
 }
 
 
 /* footer **********  */
 
 .footer-container {
-  margin-top: -50px;
+  margin-top: 10px;
   height: 50px;
   margin-left: 60px;
   font-size: 16px;
@@ -208,7 +219,7 @@ h2 {
 .footer-container li {
   display: inline;
   margin-right: 30px;
-  color: #06477a;
+  color: #746D75;
 }
 .footer-container ul {
   display: flex;
@@ -231,15 +242,15 @@ h2 {
   background-color: white;
   transition: .3s ease-in-out;
   margin-left: 60px;
-  padding-left: 40px;
+  padding: 10px 20px 10px 30px;
   z-index: 10;
 }
 .slidePanel p {
   font-size: 14px;
 }
 .item-blk {
-  font-size: 24px;
-  color: #06477a;
+  font-size: 18px;
+  color: #746D75;
   margin-bottom: 20px;
   margin-left: 0;
 }
@@ -256,13 +267,13 @@ h2 {
 }
 .profile-stn li{
   list-style: none;
-  color: #06477a;
+  color: #746D75;
   font-size: 20px;
   line-height: 2;
 }
 .profile-stn a {
   text-decoration: none;
-  color: #06477a;
+  color: #746D75;
 }
 .profile-stn a:hover {
   text-decoration: underline;
@@ -284,7 +295,7 @@ h2 {
 .infoPanel a {
   font-size: 18px;
   text-decoration: none;
-  color: #06477a;
+  color: #746D75;
 }
 .infoPanel a:hover {
   text-decoration: underline;

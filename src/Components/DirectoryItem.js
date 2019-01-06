@@ -18,9 +18,9 @@ class Directory extends Component {
             return (
                   <div className="coursesDir">
                         <h3>Courses</h3>
-                        <hr className="horizontal" />
+                        <hr className="horizontal spaced" />
                         { courseItems }
-                        <hr  />
+                        <hr className="horizontal spaced" />
                         <p>All courses</p>
                         <p>Welcome to your courses! To customise the list of courses,
                         click on the "All Courses" link and select the courses to display

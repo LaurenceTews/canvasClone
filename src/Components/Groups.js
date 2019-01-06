@@ -6,7 +6,7 @@ const Groups = props => {
 
             <div className="infoPanel groups">
                   <h3>Groups</h3>
-                  <hr />
+                  <hr className="horizontal spaced" />
                   <div className="item-blk">
                        <div><a href="#">Students</a></div>
                         <p>Connect with other students</p>
@@ -19,7 +19,7 @@ const Groups = props => {
                        <div><a href="#">Teachers</a></div>
                         <p>Request a meeting with a teacher on campus</p>
                   </div>              
-                  <hr className="horizontal"/>
+                  <hr className="horizontal spaced"/>
                   <p>All groups</p>
             </div>
 	)
