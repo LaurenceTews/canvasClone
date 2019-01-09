@@ -37,17 +37,23 @@ export default class AddCourse extends Component {
       let index = colours[point];
 
       colours.splice(point, 1);
-      this.setState({newCourse:{
+      this.setState({
+        newCourse:
+        {
         colour: index,
         title: this.state.selectedOption.value
-      }}, function(){
-        this.props.addCourse(this.state.newCourse);
-      });
+        }
+      },  async function(){
+          await this.props.addCourse(this.state.newCourse);
+          this.setState({
+            selectedOption: null
+          })
+        });
     }
 
     e.preventDefault();
     options = options.filter(options => options.value !== this.state.selectedOption.value);
-    // this.resetState(); - wrap this in a promise
+    // this.resetState();
   }
 
   resetState() {
@@ -57,8 +63,8 @@ export default class AddCourse extends Component {
     })
   }
 
-  handleChange = (selectedOption) => {
-      this.setState({ 
+  handleChange =  (selectedOption) => {
+        this.setState({ 
         newCourse: this.state.newCourse,
         selectedOption: selectedOption
        });

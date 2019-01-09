@@ -9,23 +9,23 @@ const Info = props => {
                   <hr className="horizontal spaced" />
                   <div className="item-blk">
                         <div><a href="#">Ask Your Instructor a Question</a></div>
-                        <p>Quesetions are submitted to your instructor</p>
+                        <p>Questions are submitted to your instructor</p>
                   </div>
                   <div className="item-blk">
-                        <div><a href="#">Search the Canvas Guides</a></div>
+                        <div><a href="#">Search the Student Guides</a></div>
                         <p>Find answers to common questions</p>
                   </div>
                   <div className="item-blk">
                         <div><a href="#">Report a Problem</a></div>
-                        <p>If Canvas misbehaves, tell us about it</p>
+                        <p>Tell us about any errors</p>
                   </div>
                   <div className="item-blk">
-                        <div><a href="#">Chat with Canvas Support</a></div>
-                        <p>Live chat with Canvas Support!</p>
+                        <div><a href="#">Chat with the support team</a></div>
+                        <p>Live chat with the support team!</p>
                   </div>
                   <div className="item-blk">
-                        <div><a href="#">Canvas Support Hotline</a></div>
-                        <p>0800 001 469 9023</p>
+                        <div><a href="#">Support Hotline</a></div>
+                        <p>0800 123 456 7893</p>
                   </div>
 
             </div>

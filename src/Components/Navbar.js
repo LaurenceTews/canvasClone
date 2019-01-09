@@ -140,12 +140,6 @@ class Navbar extends Component {
             <a href="#"><li onClick={ this.groupsToggle }><img className='icon' src={people} alt="people"/></li>
               <img className="popup" src={groupsPop} alt="groups"/>
             </a>
-            <a href="#"><li onClick={ this.closeMenu }><img className='icon' src={dial} alt="dial"/></li>
-              <img className="popup" src={dashboardPop} alt="dashboard"/>
-            </a>
-            <a href="#"><li><img className='icon' src={calendar} alt="calendar"/></li>
-              <img className="popup" src={calendarPop} alt="calendar"/>
-            </a>
             <a href="#"><li onClick= {this.infoToggle }><img className='icon' src={info} alt="info"/></li>
               <img className="popup" src={helpPop} alt="help"/>
             </a>
