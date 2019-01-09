@@ -3,16 +3,12 @@ import '../App.css';
 import Slider from './Slider';
 import profile from '../assets/profile.png';
 import book from '../assets/direc.png';
-import dial from '../assets/dial.png';
 import people from '../assets/group.png';
 import info from '../assets/information.png';
-import calendar from '../assets/calen.png';
 import coursesPop from '../assets/coursesPop.png';
 import helpPop from '../assets/helpPop.png';
-import calendarPop from '../assets/calendarPop.png';
 import groupsPop from '../assets/groupsPop.png';
 import accountPop from '../assets/accountPop.png';
-import dashboardPop from '../assets/dashboardPop.png';
 
 class Navbar extends Component {
   constructor(props) {
@@ -114,9 +110,6 @@ class Navbar extends Component {
     let overlay = document.getElementsByClassName("overlay")[0];
     this.state.open ? overlay.style.visibility = "visible" : overlay.style.visibility = "hidden";
   }
-  testerm() {
-    console.log("test");
-  }
 
   render () {
     let toDisplay = '';
@@ -145,8 +138,6 @@ class Navbar extends Component {
             </a>
           </ul>
         </div>
-
-
     )
   }
 }

@@ -5,7 +5,6 @@ class Directory extends Component {
       render() {
             let courseItems;
             if(this.props.courseDir.courses[0]){
-                  console.log(this.props.courseDir.courses[0].title);
                   courseItems = this.props.courseDir.courses.map(course => {
                   return (
                         <div className="item-blk">

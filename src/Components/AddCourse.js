@@ -53,7 +53,6 @@ export default class AddCourse extends Component {
 
     e.preventDefault();
     options = options.filter(options => options.value !== this.state.selectedOption.value);
-    // this.resetState();
   }
 
   resetState() {
